@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Chewy', cursive;
+
+
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+display: flex;
+justify-content: center;
+align-items: center;
+background: #ED9489;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 317px;
+left: 116px;
+top: 361px;
+background: #FCF0EF;
+border-radius: 0px 0px 10px 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.picture img {
+width: 317px;
+height: auto;
+left: 116px;
+top: 44px;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.caption {
+display: flex;
+flex-direction: column;
+align-items: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.caption h1 {
+font-weight: 700;
+font-size: 40px;
+line-height: 10px;
+text-align: center;
+
+color: #2B283A; 
+}
+
+.caption h2 {
+font-weight: 300;
+font-size: 20px;
+line-height: 5px;
+text-align: center;
+
+color: #F47D27;
+
+}
+
+.caption h3 {
+font-weight: 400;
+font-size: 15px;
+line-height: 10%;
+/* identical to box height, or 15px */
+
+text-align: center;
+
+color: #4A4E74;
+  
+}
+
+.about-int {
+margin-top: 25px;
+margin-left: 35px;
+margin-right: 35px;
+margin-bottom: 31px;
+}
+
+.about-int .about h1 {
+color: #2B283A;
+
+font-weight: 700;
+font-size: 30px;
+line-height: 150%;
+}
+
+.about-int .interests h1 {
+color: #2B283A;
+font-weight: 700;
+font-size: 30px;
+line-height: 150%;
+
+}
+
+.about-int .about p {
+
+font-weight: 400;
+font-size: 15px;
+line-height: 150%;
+/* or 15px */
+
+color: #CC8055;
+}
+
+.about-int .interests p {
+font-weight: 400;
+font-size: 15px;
+line-height: 150%;
+  /* or 15px */
+
+color: #CC8055;
+}
+
+.btns {
+display: flex;
+flex-direction: row;
+
+}
+
+.email-button {
+color: #F47D27;
+font-size: large;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+padding: 9px 20px 9px 30px;
+width: 115px;
+height: 34px;
+left: 151px;
+top: 469px;
+background: #FFFFFF;
+/* gray/300 */
+
+border: 1px solid #D1D5DB;
+/* shadow/sm */
+
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+border-radius: 6px;
+background-image: url(./assets/icons8-mail-80.png);
+background-size: 18px;
+background-repeat: no-repeat;
+background-position: 20%;
+
+
+
+}
+
+.email-button:hover {
+transform: skew(-10deg);
+}
+
+
+.li-button {
+font-size: large;
+border-style: none;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+padding: 9px 2px 9px 30px;
+gap: 8px;
+width: 115px;
+height: 34px;
+left: 283px;
+top: 469px;
+margin-left: 10px;
+background: #297FE5;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+border-radius: 6px;
+background-image: url(./assets/icons8-linkedin-30.png);
+background-size: 18px;
+background-repeat: no-repeat;
+background-position: 10%;
+
+}
+
+.li-button:hover {
+transform: skew(-10deg);
+}
+
+.footer {
+display: flex;
+flex-direction: row;
+width: 317px;
+height: 64px;
+
+background: #CCDDCC;
+background-image: url(./assets/icons8-github-80.png), url(./assets/icons8-twitter-80.png);
+background-position: center, center;
+background-position-x: 35%, 65%;
+background-repeat: no-repeat, no-repeat;
+background-size: 50px;
+
+border-radius: 0px 0px 10px 10px;
 }
