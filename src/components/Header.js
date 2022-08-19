@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import MyImage from '../assets/head-shot.jpg';
 
 
 
@@ -7,7 +8,7 @@ export default function Header() {
     return (
         <>
         <div className="picture">
-        <img src='./assets/head-shot.jpg' alt="main"/>
+        <img src={MyImage} alt="main"/>
         </div>
         <div className="caption">
         <h1>Katie Zumpano</h1>
